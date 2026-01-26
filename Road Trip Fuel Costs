@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    const int size = 5;
+    int cost[size];
+
+    // Input costs
+    for (int fuel = 0; fuel < size; fuel++)
+    {
+        cin >> cost[fuel];
+    }
+
+    // Print costs
+    cout << "Costs: ";
+    for (int fuel = 0; fuel < size; fuel++)
+    {
+        cout << cost[fuel] << " ";
+    }
+    cout << endl;
+
+    // Find max cost and print it
+    int max_cost = cost[0];
+    for (int fuel = 1; fuel < size; fuel++)
+    {
+        if (cost[fuel] > max_cost)
+        {
+            max_cost = cost[fuel];
+        }
+    }
+
+    cout << "Highest cost: " << max_cost << endl;
+
+    return 0;
+}
