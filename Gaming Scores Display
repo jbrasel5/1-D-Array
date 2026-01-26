@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    const int size = 5;
+    int scores[size];
+
+    cout << "Enter the score:\n";
+    for (int count = 0; count < size; count++)
+    {
+        cin >> scores[count];
+    }
+
+    cout << "Scores entered:\n";
+    for (int count = 0; count < size; count++)
+    {
+        cout << scores[count] << " "; // print all scores on one line
+    }
+
+    return 0;
+}
