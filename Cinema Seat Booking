@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    const int size = 5;
+    int seat[size];
+
+    // Input 5 seat numbers
+    cout << "Enter the seats:\n";
+    for (int index = 0; index < size; index++)
+    {
+        cin >> seat[index];
+    }
+
+    // Input new seat number and replace seat
+    cout << "Enter the new second seat value to be updated: ";
+    int new_seat;
+    cin >> new_seat;
+    seat[1] = new_seat;
+
+    // Print updated seats
+    cout << "Updated seats: ";
+    for (int index = 0; index < size; index++)
+    {
+        cout << seat[index] << " ";
+
+    }
+    cout << endl;
+
+    return 0;
+}
