@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    const int size = 5;
+    int step[size];
+
+    // Input steps
+    cout << "Enter the step counts:\n";
+    for (int count = 0; count < size; count++)
+    {
+        cin >> step[count];
+    }
+
+    // Print all steps
+    cout << "Steps: ";
+    for (int count = 0; count < size; count++)
+    {
+        cout << step[count] << " ";
+
+    }
+    cout << endl;
+
+    // Calculate and print total
+    int total = 0;
+    for (int count = 0; count < size; count++)
+    {
+        total += step[count];
+    }
+
+    cout << "Total: " << total << endl;
+
+    return 0;
+}
